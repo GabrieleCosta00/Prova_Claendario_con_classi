@@ -5,6 +5,8 @@
 #ifndef PROVA_CLAENDARIO_CON_CLASSI_SLOT_H
 #define PROVA_CLAENDARIO_CON_CLASSI_SLOT_H
 
+#define n_max_slot 10
+
 #include "giorno.h"
 
 class slot : public giorno {
@@ -16,7 +18,7 @@ private:
 public:
 
     slot();
-    void set_id_esame_nello_slot(const string &id_esame);
+    bool set_id_esame_nello_slot(const string &id_esame, const string &id_professore);
 
 
 
