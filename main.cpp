@@ -2,6 +2,7 @@
 #include <vector>
 #include "exam.h"
 #include "calendario.h"
+#include "giorno.h"
 
 #define LOGV(x) for(auto i: x){std::cout << i << endl;}
 

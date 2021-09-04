@@ -9,6 +9,17 @@
 
 class slot : public giorno {
 
+private:
+
+    vector <string> _id_esami;
+
+public:
+
+    slot();
+    void set_id_esame_nello_slot(const string &id_esame);
+
+
+
 
 
 };
