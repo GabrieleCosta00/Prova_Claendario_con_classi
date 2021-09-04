@@ -10,14 +10,14 @@
 
 using namespace std;
 
-struct Esame {
+/*struct Esame {
     int _durata_esame;
     int _t_ingresso;
     int _t_uscita;
     string _modalita;
     string _luogo;
 
-};
+};*/
 
 class exam {
 

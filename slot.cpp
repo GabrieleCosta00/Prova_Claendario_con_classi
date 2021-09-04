@@ -15,3 +15,7 @@ void slot::set_id_esame_nello_slot(const string &id_esame) {
     _id_esami.push_back(id_esame);
 
 }
+
+const vector<string> &slot::get_id_esami_dallo_slot() const {
+    return _id_esami;
+}
