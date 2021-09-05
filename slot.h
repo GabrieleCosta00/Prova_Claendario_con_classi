@@ -18,11 +18,8 @@ private:
 public:
 
     slot();
-    bool set_id_esame_nello_slot(const string &id_esame, const string &id_professore);
-
-
-
-
+    bool set_id_esame_nello_slot(const string &id_esame, const vector <string> &id_professori, int n_vers_paral);
+    const vector<string> &get_id_esami_dallo_slot() const;
 
 };
 

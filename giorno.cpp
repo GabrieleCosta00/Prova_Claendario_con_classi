@@ -4,12 +4,21 @@
 
 #include <vector>
 #include <string>
-#include "exam.h"
-#include "slot.h"
+#include <algorithm>
+#include <iostream>
 #include "giorno.h"
 
+using namespace std;
 
-bool giorno::set_id_esame_nel_giorno(const string &id_esame, const string &id_cds, const int anno, const int n_slot_necessari) {
+giorno::giorno() {
+
+    _fasce_orarie.resize(n_slot);
+
+}
+
+bool giorno::set_id_esame_nel_giorno(const string &id_esame, const string &id_cds, const int anno,
+                                     const int n_slot_necessari, const vector<string> &id_professori, int n_vers_paral)
+ {
 
     bool esame_inserito;
     int ins_nello_slot = 0;
@@ -44,3 +53,4 @@ bool giorno::set_id_esame_nel_giorno(const string &id_esame, const string &id_cd
     return false;
 
 }
+
